@@ -8,6 +8,7 @@ public class Piece {
     
     public Piece(BoardNotFinal board) {
         this.board = board;
+        this.position = null;
     }
     
     private BoardNotFinal getBoard() {
