@@ -2,7 +2,10 @@
 package Program;
 
 import Chess.ChessPiece;
+import Chess.ChessPosition;
 import Chess.Color;
+import java.util.InputMismatchException;
+import java.util.Scanner;
 
 public class UserInterface {
     
@@ -24,6 +27,17 @@ public class UserInterface {
 	public static final String ANSI_PURPLE_BACKGROUND = "\u001B[45m";
 	public static final String ANSI_CYAN_BACKGROUND = "\u001B[46m";
 	public static final String ANSI_WHITE_BACKGROUND = "\u001B[47m";
+        
+    public static ChessPosition readChessPosition(Scanner sc) {
+        try {
+            String s = sc.nextLine();
+            char column = s.charAt(0);
+            int row = Integer.parseInt(s.substring(1));
+            return new ChessPosition(column, row);
+        } catch (RuntimeException e) {
+            throw new InputMismatchException("Error reading position: please, inform a valid position.");
+        }
+    }    
     
     public static void printBoard(ChessPiece[][] pieces) {
         for (int i = 0; i < pieces.length; i++) {
@@ -50,4 +64,5 @@ public class UserInterface {
         }
         System.out.print(" ");
 	}
+    
 }
