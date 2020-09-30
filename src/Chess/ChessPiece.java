@@ -4,7 +4,7 @@ package Chess;
 import BoardGame.BoardNotFinal;
 import BoardGame.Piece;
 
-public class ChessPiece extends Piece {
+public abstract class ChessPiece extends Piece {
     
     private Color color;
 
