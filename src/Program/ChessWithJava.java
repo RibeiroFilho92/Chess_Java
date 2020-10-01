@@ -25,11 +25,15 @@ public class ChessWithJava {
                 System.out.println();
                 System.out.print("Source: ");
                 ChessPosition find = UserInterface.readChessPosition(sc);
+                
+                boolean[][] possibleMoves = chessMatch.possibleMoves(find);
+                UserInterface.clearScreen();
+                UserInterface.printBoard(chessMatch.getPieces(), possibleMoves);
                 System.out.println();
                 System.out.print("Target: ");
-                ChessPosition found = UserInterface.readChessPosition(sc);
+                ChessPosition target = UserInterface.readChessPosition(sc);
 
-                ChessPiece capturedPiece = chessMatch.performChessMove(find, found); 
+                ChessPiece capturedPiece = chessMatch.performChessMove(find, target); 
             } catch (ChessException e) {
                 System.out.println(e.getMessage());
                 sc.nextLine();
