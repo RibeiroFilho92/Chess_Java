@@ -21,7 +21,7 @@ public class ChessWithJava {
         while (true) {
             try {
                UserInterface.clearScreen();
-                UserInterface.printBoard(chessMatch.getPieces());
+                UserInterface.printMatch(chessMatch);
                 System.out.println();
                 System.out.print("Source: ");
                 ChessPosition find = UserInterface.readChessPosition(sc);
