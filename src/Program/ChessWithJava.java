@@ -23,7 +23,7 @@ public class ChessWithJava {
         
         while (!chessMatch.getCheckMate()) {
             try {
-               UserInterface.clearScreen();
+                UserInterface.clearScreen();
                 UserInterface.printMatch(chessMatch, captured);
                 System.out.println();
                 System.out.print("Source: ");
