@@ -3,13 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Ribeiro/Documents/NetBeansProjects/ChessWithJava/src/Chess/Pieces/Bishop.java</file>
             <file>file:/C:/Users/Ribeiro/Documents/NetBeansProjects/ChessWithJava/src/Chess/Pieces/King.java</file>
-            <file>file:/C:/Users/Ribeiro/Documents/NetBeansProjects/ChessWithJava/src/Chess/Pieces/Rook.java</file>
-            <file>file:/C:/Users/Ribeiro/Documents/NetBeansProjects/ChessWithJava/src/Chess/Pieces/Queen.java</file>
-            <file>file:/C:/Users/Ribeiro/Documents/NetBeansProjects/ChessWithJava/src/Chess/Pieces/Knight.java</file>
             <file>file:/C:/Users/Ribeiro/Documents/NetBeansProjects/ChessWithJava/src/Chess/ChessMatch.java</file>
-            <file>file:/C:/Users/Ribeiro/Documents/NetBeansProjects/ChessWithJava/src/Chess/Pieces/Pawn.java</file>
+            <file>file:/C:/Users/Ribeiro/Documents/NetBeansProjects/ChessWithJava/src/BoardGame/BoardNotFinal.java</file>
         </group>
     </open-files>
 </project-private>
